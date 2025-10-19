@@ -1,6 +1,6 @@
 services:
   strapi:
-    build: Dockerfile
+    build: .
     container_name: strapi-app
     restart: unless-stopped
     ports:
