@@ -1,0 +1,17 @@
+services:
+  strapi:
+    build: Dockerfile
+    container_name: strapi-app
+    restart: unless-stopped
+    ports:
+      - "13377:13377"
+    environment:
+      PORT: 13377
+    volumes:
+      # Bind mounts для разработки
+      - ./config:/reviewBot/config
+      - ./src:/reviewBot/src
+      - ./package.json:/reviewBot/package.json
+      - ./extensions:/reviewBot/extensions
+      - ./public:/reviewBot/public
+      - ./database:/reviewBot/database
