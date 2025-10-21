@@ -1,7 +1,7 @@
 FROM node:20-alpine
 
 # Set working directory
-WORKDIR /app
+WORKDIR /reviewBot
 
 # Copy package files
 COPY package*.json ./
