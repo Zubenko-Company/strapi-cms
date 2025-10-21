@@ -25,5 +25,5 @@ services:
       - ALLOW_HOST=$ALLOW_HOST
     volumes:
       - ./extensions:/reviewBot/extensions
-      - ./public:/reviewBot/public/uploads
+      - ./uploads:/reviewBot/public/uploads
       - ./database:/reviewBot/database
