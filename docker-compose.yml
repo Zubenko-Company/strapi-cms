@@ -25,10 +25,6 @@ services:
       - ALLOW_HOST=$ALLOW_HOST
 
     volumes:
-      # Bind mounts для разработки
-      - ./config:/reviewBot/config
-      - ./src:/reviewBot/src
-      - ./package.json:/reviewBot/package.json
       - ./extensions:/reviewBot/extensions
       - ./public:/reviewBot/public
       - ./database:/reviewBot/database
