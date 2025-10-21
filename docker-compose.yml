@@ -23,8 +23,7 @@ services:
       - DATABASE_FILENAME=$DATABASE_FILENAME
       - JWT_SECRET=$JWT_SECRET
       - ALLOW_HOST=$ALLOW_HOST
-
     volumes:
       - ./extensions:/reviewBot/extensions
-      - ./public:/reviewBot/public
+      - ./public:/reviewBot/public/uploads
       - ./database:/reviewBot/database
