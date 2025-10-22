@@ -19,4 +19,4 @@ RUN yarn build
 EXPOSE 13377
 
 # Start Strapi
-CMD ["yarn", "run", "start"]
+CMD ["yarn", "run", "dev"]
